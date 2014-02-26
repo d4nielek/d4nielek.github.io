@@ -32,18 +32,58 @@
 <a name="Danon wita cię serdecznie!" class="anchor" href="#Danon wita cię serdecznie!"><span class="octicon octicon-link"></span></a>Danon wita cię serdecznie!</h3>
 
 <p>Witaj przybyszu, mam na imię Daniel 'Danon' Zmuda i mam nadzieję że zaliczę I semestr jeszcze w 2014 roku. Cóż sprowadza cię w tak odległe czeluści internetu?</p>
-
-<pre><code>jakiś skomplikowany kod który kiedyś tu dodam
-</code></pre>
-
 <p>W razie wątpliwości zadzwoń. 727925137</p>
 
 
 
 
 
-<h3>
-<a name="Żegnamy." class="anchor" href="#Żegnamy."><span class="octicon octicon-link"></span></a>Żegnamy.</h3>
+
+<h3><a name="Bash" class="anchor" href="#Bash"><span class="octicon octicon-link"></span></a>Bash</h3>
+
+<p>Skrypt dodający sufiks "_old" do nazw wszystkich plików w katalogu z wyjątkiem tego skryptu:</p>
+
+<pre><code>#!/bin/bash
+for nazwa in `ls`
+  do
+    if [ $nazwa != `basename $0` ]
+    then
+    cp $nazwa $nazwa"_old"
+    fi
+  done
+exit 0</code></pre>
+
+<p>Dwa skrypty używające pętli while i for:</p>
+
+<pre><code>#!/bin/bash
+i=$1;
+  while ((i<=$2));
+  do
+  echo "$i"
+  let "i+=1";
+  done
+exit 0</code></pre>
+
+
+
+<pre><code>#!/bin/bash
+for ((i=$1; i<=$2;i++))
+  do
+  echo $i
+  done
+exit 0</code></pre>
+
+
+
+
+
+<h3><a name="LaTeX" class="anchor" href="#LaTeX"><span class="octicon octicon-link"></span></a>LaTeX</h3>
+<p>Przepisany tekst książki w formacie pdf dostępny do pobrania <a href="http://wyslijto.pl/plik/lgmz21hstq">tutaj.</a></p>
+
+
+
+
+<h3><a name="Żegnamy." class="anchor" href="#Żegnamy."><span class="octicon octicon-link"></span></a>Żegnamy.</h3>
 
 <p>To już wszystko, tymczasem kliknij w <a href="http://youtu.be/KaqC5FnvAEc">ten link</a>, zapraszam ponownie niedługo.</p>
 
